@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/IMG/patas.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Menu</title>
+</head>
+<body>
+    <div id="containerMain">
+        <nav class="sideBar">
+            <div class="avatar">
+                <img src="../static/IMG/icone_user.jpg" alt="Avatar">
+                <p id="nomeVeterinario">Carregando...</p> 
+            </div>
+            <ul class="menu">
+                <li id="home" class="menuItem ativoMenu" onclick="mudarPagina('home')">
+                    <a href="#">
+                        <span class="icone"><i class="fa-solid fa-house"></i></span>
+                        <span class="titulo">Home</span>
+                    </a>
+                </li>
+                <li id="clientes" class="menuItem" onclick="mudarPagina('clientes')">
+                    <a href="#">
+                        <span class="icone"> <i class="fa-solid fa-user"></i></span>
+                        <span class="titulo">Clientes</span>
+                    </a>
+                </li>
+                <li id="pacientes" class="menuItem" onclick="mudarPagina('pacientes')">
+                    <a href="#">
+                        <span class="icone"><i class="fa-solid fa-paw"></i></span>
+                        <span class="titulo">Pacientes</span>
+                    </a>
+                </li>
+                <li id="consultas" class="menuItem" onclick="mudarPagina('consultas')">
+                    <a href="#">
+                        <span class="icone"> <i class="fa-solid fa-briefcase-medical"></i></span>
+                        <span class="titulo">Consultas</span>
+                    </a>
+                </li>
+                <li id="logout" class="menuItem" onclick="mudarPagina()">
+                    <a href="#">
+                        <span class="icone"><i class="fa-solid fa-right-from-bracket"></i> </span>
+                        <span class="titulo">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="conteudo" id="conteudo">
+            <h1>Seja Bem-vindo</h1>
+            <p>Selecione uma opção no menu para começar.</p>
+        </div>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+</html>
